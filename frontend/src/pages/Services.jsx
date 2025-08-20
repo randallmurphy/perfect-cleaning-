@@ -9,7 +9,7 @@ const serviceList = [
   'Window Washing',
 ];
 
-export default function Services() {
+function Services() {
   return (
     <Container sx={{ mt: 4 }}>
       <Typography variant="h3" gutterBottom>
@@ -25,3 +25,4 @@ export default function Services() {
     </Container>
   );
 }
+export default Services

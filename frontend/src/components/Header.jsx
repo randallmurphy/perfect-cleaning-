@@ -9,7 +9,7 @@ const navLinks = [
   { title: 'Contact', path: '/contact' },
 ];
 
-export default function Header() {
+ function Header() {
   return (
     <AppBar position="static" color="primary" enableColorOnDark>
       <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
@@ -41,3 +41,4 @@ export default function Header() {
     </AppBar>
   );
 }
+export default Header

@@ -21,7 +21,7 @@ const services = [
   },
 ];
 
-export default function Home() {
+ function Home() {
   return (
     <>
       <Box
@@ -61,3 +61,4 @@ export default function Home() {
     </>
   );
 }
+export default Home

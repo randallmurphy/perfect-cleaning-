@@ -1,0 +1,128 @@
+.slider-area {
+  position: relative;
+  overflow: visible;
+}
+
+/* Slide Backgrounds */
+.slide-bg-1 {
+  background: url('../images/slide1.jpg') center/cover no-repeat;
+}
+.slide-bg-2 {
+  background: url('../images/slide2.jpg') center/cover no-repeat;
+}
+.slide-bg-3 {
+  background: url('../images/slide3.jpg') center/cover no-repeat;
+}
+
+.single-slider-item {
+  min-height: 90vh;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: #fff;
+}
+
+/* Centered Text Container */
+.slider-content {
+  text-align: left;
+  max-width: 600px;
+  margin-left: 50px;
+}
+
+/* Title & Subtitle */
+.slider-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+  margin-bottom: 20px;
+}
+.slider-title span {
+  color: #ffd700; /* drip highlight */
+}
+.slider-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+/* Buttons */
+.cleaning-btn {
+  background: #1976d3;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.cleaning-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #1976d3;
+}
+
+/* Custom Arrows */
+.slick-arrow,.slick-next{
+    background-color: #1976d3;
+}
+.custom-next, .custom-prev {
+   
+  width: 50px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-30%);
+  z-index: 10;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+  background: rgba(25, 118, 211, .4);
+  padding: 10px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+.custom-next:hover, .custom-prev:hover {
+  background: rgba(25, 118, 211);
+  transform: scale(1.1) translateY(-50%);
+}
+.custom-next {
+    
+   
+  right: 10px; /* right of text */
+}
+.custom-prev {
+  left: 20px;
+}
+
+/* Dots */
+.slick-dots {
+  bottom: 20px;
+}
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #1976d3;
+  opacity: 0.7;
+}
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .slider-content {
+    margin-left: 20px;
+    text-align: center;
+  }
+  .slider-title {
+    font-size: 2rem;
+  }
+  .slider-subtitle {
+    font-size: 1rem;
+  }
+  .custom-next, .custom-prev {
+    font-size: 30px;
+    padding: 8px;
+  }
+}

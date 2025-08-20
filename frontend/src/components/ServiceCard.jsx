@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, CardMedia, CardContent, Typography } from '@mui/material';
 
-export default function ServiceCard({ title, description, image }) {
+ function ServiceCard({ title, description, image }) {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
@@ -21,3 +21,4 @@ export default function ServiceCard({ title, description, image }) {
     </Card>
   );
 }
+export default ServiceCard

@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Typography, Button } from '@mui/material';
 import { Link as RouterLink } from 'react-router-dom';
 
-export default function NotFound() {
+function NotFound() {
   return (
     <Container sx={{ mt: 4, textAlign: 'center' }}>
       <Typography variant="h2" gutterBottom>
@@ -14,3 +14,4 @@ export default function NotFound() {
     </Container>
   );
 }
+export default  NotFound
